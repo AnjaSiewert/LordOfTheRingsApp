@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
 import { volumes } from "../../lib/data";
+import Image from "next/image";
 
 export default function VolumeDetail() {
   const router = useRouter();
@@ -14,6 +15,7 @@ export default function VolumeDetail() {
 
   return (
     <>
+      <Link href="/">◀︎Back to HomePage</Link>
       <h1>{volume.title}</h1>
       <p>{volume.description}</p>
       <ul>
@@ -27,7 +29,7 @@ export default function VolumeDetail() {
           );
         })}
       </ul>
-      <Link href="/">Back to HomePage</Link>
+      <Image src={volume.cover} alt={volume.title} width={140} height={230} />
     </>
   );
 }
