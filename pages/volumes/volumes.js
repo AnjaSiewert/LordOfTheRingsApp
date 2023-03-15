@@ -22,6 +22,7 @@ export default function Volumes() {
           </Link>
         </li>
       </ul>
+      <Link href="/">Back to HomePage</Link>
     </div>
   );
 }

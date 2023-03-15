@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Fragment } from "react";
 import { volumes } from "../../lib/data";
 
@@ -19,6 +20,7 @@ export default function VolumesNo2() {
           );
         })}
       </ul>
+      <Link href="/">Back to HomePage</Link>
     </>
   );
 }
