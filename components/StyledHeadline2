@@ -1,0 +1,7 @@
+import styled from "styled-components";
+
+const StyledHeadline2 = styled.h2`
+  font: var(--font-headline-2);
+`;
+
+export default StyledHeadline2;
